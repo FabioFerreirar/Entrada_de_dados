@@ -11,8 +11,11 @@ namespace Entrada_de_dados
         static void Main(string[] args)
         {
             Console.WriteLine("Digite seu nome: ");
-            string nome = Console.ReadLine();
-            Console.WriteLine("Olá  " + nome);
+            string Nome = Console.ReadLine();
+            Console.WriteLine("Olá  " + Nome);
+            Console.WriteLine("Digite a sua idade");
+            string Idade = Console.ReadLine();
+            Console.WriteLine("Você tem " + Idade + " anos");
             Console.ReadKey();
         }
     }
