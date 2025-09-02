@@ -21,7 +21,7 @@ namespace Entrada_de_dados
             char TeclaPressionada = Console.ReadKey(true).KeyChar;
             Console.WriteLine("Você pressionou a tecla: " + TeclaPressionada);
 
-            Console.ReadKey();
+            Console.ReadKey();  // inserção de um comando para pausar a execução do programa
         }
     }
 }
