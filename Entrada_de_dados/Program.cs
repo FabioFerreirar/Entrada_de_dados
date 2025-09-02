@@ -22,6 +22,8 @@ namespace Entrada_de_dados
             Console.WriteLine("Você pressionou a tecla: " + TeclaPressionada);
 
             Console.ReadKey();  // inserção de um comando para pausar a execução do programa
+            // Teste de tentativa direta da branch principal do repositório remoto protegida.
+            // Segundo teste de tentativa direta da branch principal do repositório remoto protegida.
         }
     }
 }
