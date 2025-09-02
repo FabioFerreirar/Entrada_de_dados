@@ -20,7 +20,6 @@ namespace Entrada_de_dados
             Console.WriteLine("Pressione qualauer tecla");
             char TeclaPressionada = Console.ReadKey(true).KeyChar;
             Console.WriteLine("Você pressionou a tecla: " + TeclaPressionada);
-
             Console.ReadKey();
         }
     }
