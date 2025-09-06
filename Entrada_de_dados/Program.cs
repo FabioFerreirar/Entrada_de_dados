@@ -10,20 +10,25 @@ namespace Entrada_de_dados
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite seu nome: ");
+            Console.WriteLine("Digite seu nome:");
             string Nome = Console.ReadLine();
-            Console.WriteLine("Olá  " + Nome);
-            Console.WriteLine("Digite a sua idade");
-            string Idade = Console.ReadLine();
-            Console.WriteLine("Você tem " + Idade + " anos");
-            int IdadeInteiro = Convert.ToInt32(Idade);
-            Console.WriteLine("Pressione qualauer tecla");
-            char TeclaPressionada = Console.ReadKey(true).KeyChar;
-            Console.WriteLine("Você pressionou a tecla: " + TeclaPressionada);
 
-            Console.ReadKey();  // inserção de um comando para pausar a execução do programa
-            // Teste de tentativa direta da branch principal do repositório remoto protegida.
-            // Segundo teste de tentativa direta da branch principal do repositório remoto protegida.
+            Console.WriteLine("Digite sua idade:");
+            UInt16 Idade = Convert.ToUInt16(Console.ReadLine());
+
+            Console.WriteLine("Digite o número do seu documento");
+            string Documento = Console.ReadLine();
+
+            Console.WriteLine("Digite o nome da sua rua: ");
+            string NomeDaRua = Console.ReadLine();
+
+            Console.WriteLine("Digite o número da sua casa: ");
+            UInt32 NumeroDaCasa = Convert.ToUInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe seu gênero. Pressione F para feminino e M para mascuilino");
+            string Genero = Console.ReadKey(true).KeyChar.ToString();
+
+            Console.WriteLine("Olá, " + Nome + "! Você tem " + Idade + " anos, seu documento é " + Documento + ", você mora na rua " + NomeDaRua + ", número " + NumeroDaCasa + " e seu gênero é " + Genero);
         }
     }
 }
