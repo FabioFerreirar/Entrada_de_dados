@@ -34,7 +34,7 @@ namespace Entrada_de_dados
                 
                 if (Genero != "M" && Genero != "F")
                 {
-                    Console.WriteLine("\nEntrada inválida. Tente novamente.\n");
+                    Console.WriteLine("\nEntrada inválida. Você digitou " + Genero + " Tente novamente.\n");
                 }
             }
             
