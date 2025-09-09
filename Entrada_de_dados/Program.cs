@@ -24,9 +24,21 @@ namespace Entrada_de_dados
 
             Console.WriteLine("Digite o número da sua casa: ");
             UInt32 NumeroDaCasa = Convert.ToUInt32(Console.ReadLine());
+            
+            string Genero = "";
 
-            Console.WriteLine("Informe seu gênero. Pressione F para feminino e M para mascuilino");
-            string Genero = Console.ReadKey(true).KeyChar.ToString();
+            while (Genero != "M" && Genero != "F")
+            {
+                Console.WriteLine("Informe seu gênero. Pressione F para feminino e M para mascuilino");
+                Genero = Console.ReadKey(true).KeyChar.ToString().ToUpper();
+                
+                if (Genero != "M" && Genero != "F")
+                {
+                    Console.WriteLine("\nEntrada inválida. Tente novamente.\n");
+                }
+            }
+            
+
 
             Console.WriteLine("Olá, " + Nome + "! Você tem " + Idade + " anos, seu documento é " + Documento + ", você mora na rua " + NomeDaRua + ", número " + NumeroDaCasa + " e seu gênero é " + Genero);
         }
